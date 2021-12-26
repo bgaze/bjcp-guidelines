@@ -1,0 +1,14 @@
+[
+    {
+        "id": "beer",
+        "name": "Beer"
+    },
+    {
+        "id": "mead",
+        "name": "Mead"
+    },
+    {
+        "id": "cider",
+        "name": "Cider"
+    }
+]

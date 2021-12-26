@@ -1,0 +1,14 @@
+[
+    {
+        "id": "C1",
+        "typeId": "cider",
+        "name": "Standard Cider And Perry",
+        "notes": "The styles represented in this category are the principal established styles. \"New World\" is simply a name change from the \"Common\" of earlier versions.There are known styles not represented here. In particular, Spanish (Asturian and Basque) does not yet have a style definition because there is presently insufficient appreciation and understanding, as well as a lack of commercial examples of known quality for reference. In the case of a cider made to a style not explicitly represented here, it should be entered in the closest applicable category. The first decision is whether the cider was made with apples with significant tannin content that gives the cider noticeable astringency or bitterness. If not, it should be entered as a New World Cider. If so, the choice is between the English and French sub-categories; this decision should be based on whether the cider tends more toward sweet, rich, somewhat fruity (French) or drier and more austere (English). For perry of a non-represented style, the decision is, as above, based on tannin content. If in doubt, enter as New World Perry."
+    },
+    {
+        "id": "C2",
+        "typeId": "cider",
+        "name": "Specialty Cider And Perry",
+        "notes": "Specialty cider/perry includes beverages made with added flavorings (spices and/or other fruits), those made with substantial amounts of sugar-sources to increase starting gravities, and the beverage made from a combination of apple and pear juice (sometimes called pider).The same general characteristics and fault descriptions apply to specialty ciders as to standard ciders (preceding category), with the exception of added ingredients allowed."
+    }
+]

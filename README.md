@@ -1,27 +1,12 @@
 # BJCP Beer Style Guidelines
 
-This package provides a JSON version of the [Beer Judge Certification Program](https://www.bjcp.org) style guidelines.
+This package provides a JSON version of the [Beer Judge Certification Program](https://www.bjcp.org) style guidelines based on [official XML version](https://github.com/meanphil/bjcp-guidelines-2015).
 
-### Content
+### All content is Copyright © 2015 BJCP, Inc.
 
-Each version is stored in a dedicated directory.  
-New versions / updates will be added as soon as delivered.
-
-In order to ease data manipulation, some custom columns were added in addition to BJCP informations:
-
-+ **categories.json**:
-    + **slug:** a unique slug based on category's code and name.
-+ **styles.json**:
-    + **slug:** a unique slug based on style's code and name.
-    + **category_code:** category's code.
-    + **category_slug:** category's slug.
-
-Slugs were generated using [https://www.npmjs.com/package/slugify]():  
-
-```javascript
-category.slug = slugify(`${category.code}-${category.name}`, {lower: true});
-style.slug = slugify(`${style.code}-${style.name}`, {lower: true});
-```
+Please note that these materials represent a great deal of hard work on the part of a great many volunteers.  
+You may not use these materials for any commercial purpose without permission.  
+You are NOT authorized to copy and post these guidelines, in any form, either on the web or in print, without specific permission from the BJCP.
 
 ### Contribution
 

@@ -1,0 +1,29 @@
+{
+    "name": "bjcp-guidelines",
+    "version": "1.0.0",
+    "description": "JSON version of the Beer Judge Certification Program style guidelines",
+    "scripts": {
+        "parse-2015": "node utils/bjcp-2015-parser.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bgaze/bjcp-guidelines.git"
+    },
+    "keywords": [
+        "bjcp guidelines",
+        "json"
+    ],
+    "author": {
+        "name": "Benjamin Gazé",
+        "email": "benjamin@bgaze.fr",
+        "url": "https://www.bgaze.fr"
+    },
+    "bugs": {
+        "url": "https://github.com/bgaze/bjcp-guidelines/issues"
+    },
+    "homepage": "https://github.com/bgaze/bjcp-guidelines#readme",
+    "devDependencies": {
+        "tiny-json-http": "^7.3.1",
+        "xml2js": "^0.4.23"
+    }
+}

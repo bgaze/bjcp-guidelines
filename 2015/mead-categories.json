@@ -1,0 +1,26 @@
+[
+    {
+        "id": "M1",
+        "typeId": "mead",
+        "name": "Traditional Mead",
+        "notes": "See the Introduction to Mead Guidelines for detailed descriptions of standard mead characteristics, an explanation of standard terms, and entering instructions."
+    },
+    {
+        "id": "M2",
+        "typeId": "mead",
+        "name": "Fruit Mead",
+        "notes": "A mead made with fruit is called a Melomel, although some melomels also have other names (cyser, pyment). We are introducing category names for certain types of melomels based on the variety of fruit used; these are more entry categories than actual styles. We selected different names for the category and subcategories to avoid the confusion of using the same names in different ways.See the Introduction to Mead Guidelines for detailed descriptions of standard mead characteristics, an explanation of standard terms, and entering instructions.Refer to Category M1 descriptions for additional detail on the character to be expected from dry, semi-sweet and sweet meads. Use those guidelines to judge distinctions between the various sweetness levels. Judging meads from dry to sweet is recommended as the primary ordering, with strength being the secondary ordering criterion."
+    },
+    {
+        "id": "M3",
+        "typeId": "mead",
+        "name": "Spiced Mead",
+        "notes": "See the Introduction to Mead Guidelines for detailed descriptions of standard mead characteristics, an explanation of standard terms, and entering instructions.Refer to Category M1 descriptions for additional detail on the character to be expected from dry, semi-sweet and sweet meads. Use those guidelines to judge distinctions between the various sweetness levels. Judging meads from dry to sweet is recommended as the primary ordering, with strength being the secondary ordering criterion."
+    },
+    {
+        "id": "M4",
+        "typeId": "mead",
+        "name": "Specialty Mead",
+        "notes": "See the Introduction to Mead Guidelines for detailed descriptions of standard mead characteristics, an explanation of standard terms, and entering instructions.Refer to Category M1 descriptions for additional detail on the character to be expected from dry, semi-sweet and sweet meads. Use those guidelines to judge distinctions between the various sweetness levels. Judging meads from dry to sweet is recommended as the primary ordering, with strength being the secondary ordering criterion."
+    }
+]
