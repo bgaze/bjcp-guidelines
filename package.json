@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "JSON version of the Beer Judge Certification Program style guidelines",
     "scripts": {
-        "parse-2015": "node utils/bjcp-2015-parser.js"
+        "2015": "node utils/bjcp-2015-parser.js",
+        "2021": "node utils/bjcp-2021-parser.js"
     },
     "repository": {
         "type": "git",
