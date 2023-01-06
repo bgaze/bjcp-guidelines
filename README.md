@@ -8,7 +8,7 @@ Content is based on [official XML version](https://github.com/meanphil/bjcp-guid
 
 ### 2021 Guidelines
 
-JSON version was build by parsing [official docx version](https://www.bjcp.org/wp-content/uploads/2021/12/2021_Guidelines_Beer.docx).  
+JSON version was build by parsing [official docx version](https://www.bjcp.org/download/2021_Guidelines_Beer.docx).  
 Currently, only beer guidelines are available.
 
 Some adaptation were necessary to create a normalized data structure :
