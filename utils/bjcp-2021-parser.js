@@ -93,6 +93,7 @@ new (class {
             parentStyleId: parentStyleId || null,
             name: name,
             description: [],
+            vitalStatistics: [],
             ibuMin: null,
             ibuMax: null,
             ogMin: null,
@@ -114,7 +115,6 @@ new (class {
             comparison: [],
             examples: [],
             tags: [],
-            statistics: []
         }
     }
 
@@ -129,7 +129,7 @@ new (class {
             {pattern: 'History', key: 'history'},
             {pattern: 'Characteristic Ingredients', key: 'ingredients'},
             {pattern: 'Style Comparison', key: 'comparison'},
-            {pattern: 'Vital Statistics', key: 'statistics'},
+            {pattern: 'Vital Statistics', key: 'vitalStatistics'},
             {pattern: 'Commercial Examples', key: 'examples'},
             {pattern: 'Tags', key: 'tags'}
         ];
@@ -153,10 +153,9 @@ new (class {
     }
 
     normalizeStyle(style) {
-        if (style.statistics.length && this.parseStyleStatistics(style)) {
-            style.description.push('Vital Statistics :', ...style.statistics);
+        if (style.vitalStatistics.length) {
+            this.parseStyleStatistics(style);
         }
-        delete style.statistics;
 
         for (let key in style) {
             if (Array.isArray(style[key])) {
@@ -173,7 +172,7 @@ new (class {
 
     parseStyleStatistics(style) {
         let pattern = /OG: ([\d.]+) – ([\d.]+) IBUs: ([\d.]+) – ([\d.]+) FG: ([\d.]+) – ([\d.]+) SRM: ([\d.]+) – ([\d.]+) ABV: ([\d.]+) – ([\d.]+)%/;
-        let normalized = style.statistics.join(' ').replace(/\s+/g, ' ');
+        let normalized = style.vitalStatistics.join(' ').replace(/\s+/g, ' ');
         let addToDescription = false;
 
         if (style.id === '23F') {
@@ -201,12 +200,6 @@ new (class {
         }
 
         return addToDescription;
-    }
-
-    parseNumber(value) {
-        value = parseFloat(value);
-
-        return isNaN(value) ? null : value;
     }
 
     parseArrayString(str) {

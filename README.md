@@ -22,7 +22,7 @@ Some adaptation were necessary to create a normalized data structure :
   A `parentStyleId` key was also added to track hierarchical relation.
 - **Vital Statistics** cannot always be directly parsed.  
 Parsing consist in extracting following data : `ogMin`, `ogMax`, `ibuMin`, `ibuMax`, `fgMin`, `fgMax`, `srmMin`, `srmMax`, `abvMin`, `abvMax`.  
-When direct parsing is not possible, original `Vital Statistics` expression was appended to style description. 
+In any case, original `Vital Statistics` expression remains available under style's `vitalStatistics` key. 
     - **Statistics match standard format but contain comments.**  
       Comment was removed to allow standard parsing.  
       Affected style : 23F (Fruit Lambic).
