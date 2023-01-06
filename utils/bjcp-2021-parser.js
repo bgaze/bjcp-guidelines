@@ -154,6 +154,11 @@ new (class {
 
     normalizeStyle(style) {
         if (style.vitalStatistics.length) {
+            try {
+                style.vitalStatistics = style.vitalStatistics.join(' ').replace(/\s+/g, ' ').trim()
+            }catch (e) {
+                console.log(style.vitalStatistics);
+            }
             this.parseStyleStatistics(style);
         }
 
@@ -172,15 +177,12 @@ new (class {
 
     parseStyleStatistics(style) {
         let pattern = /OG: ([\d.]+) – ([\d.]+) IBUs: ([\d.]+) – ([\d.]+) FG: ([\d.]+) – ([\d.]+) SRM: ([\d.]+) – ([\d.]+) ABV: ([\d.]+) – ([\d.]+)%/;
-        let normalized = style.vitalStatistics.join(' ').replace(/\s+/g, ' ');
-        let addToDescription = false;
+        let normalized = style.vitalStatistics.replace(/\s+/g, ' ');
 
         if (style.id === '23F') {
             pattern = /OG: ([\d.]+) – ([\d.]+) IBUs: ([\d.]+) – ([\d.]+) FG: ([\d.]+) – ([\d.]+) SRM: ([\d.]+) – ([\d.]+) .+ ABV: ([\d.]+) – ([\d.]+)%/;
-            addToDescription = true;
         } else if (style.id === '25B') {
             pattern = /([\d.]+) – ([\d.]+) .+ IBUs: ([\d.]+) – ([\d.]+) FG: ([\d.]+) – ([\d.]+) .+ SRM: ([\d.]+) – .+ ABV: ([\d.]+) – [\d.]+% .+ [\d.]+ – ([\d.]+) .+ [\d.]+ – [\d.]+% .+ [\d.]+ – ([\d.]+)% .+/;
-            addToDescription = true;
         }
 
         let parsed = pattern.exec(normalized);
@@ -195,11 +197,7 @@ new (class {
             style.srmMax = parseFloat(parsed[style.id === '25B' ? 8 : 9]);
             style.abvMin = parseFloat(parsed[style.id === '25B' ? 7 : 9]);
             style.abvMax = parseFloat(parsed[10]);
-        } else {
-            addToDescription = true;
         }
-
-        return addToDescription;
     }
 
     parseArrayString(str) {
